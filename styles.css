@@ -79,11 +79,17 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+  outline: none; 
+  -webkit-tap-highlight-color: transparent; 
 }
 
 #hamburger.active {
   border: 2px solid white;
   border-radius: 5px;
+}
+
+#hamburger:focus {
+  outline: none;
 }
 
 /* --- Top Section --- */
