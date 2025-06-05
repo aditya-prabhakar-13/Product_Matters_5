@@ -320,8 +320,9 @@ body {
 /* --- Responsive Styles --- */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #hamburger {
@@ -341,6 +342,7 @@ body {
     padding: 0 0;
     opacity: 0;
     transition: max-height 0.8s ease-in, padding 0.8s ease-in, opacity 0.8s ease-in;
+    border-radius: 10px;
   }
 
   .nav-links.show {
@@ -354,8 +356,11 @@ body {
   }
 
   .nav-brand {
-    align-self: flex-end;
-    margin-top: 10px;
+    /* align-self: flex-end; */
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
   }
 
   .main-content h1 {
