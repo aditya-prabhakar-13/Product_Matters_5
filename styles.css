@@ -157,6 +157,11 @@ body {
 .live {
   color: red;
   font-weight: bold;
+  animation-name: liveBlink;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(1, start);
 }
 
 .bottom-section h2 {
@@ -395,5 +400,18 @@ body {
   .course-label,
   .live-status {
     font-size: 0.8rem;
+  }
+}
+
+
+@keyframes liveBlink{
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
