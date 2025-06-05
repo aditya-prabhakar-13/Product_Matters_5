@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hamburger.addEventListener("click", function () {
     navLinks.classList.toggle("show");
+    hamburger.classList.toggle("active");
   });
 
   const coll = document.querySelectorAll(".collapsible");
