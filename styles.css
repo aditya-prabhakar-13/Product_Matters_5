@@ -1,32 +1,22 @@
-.noto-serif-dives-akuru-regular {
-  font-family: "Noto Serif Dives Akuru", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-* {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
-  font-family: "Noto Serif Dives Akuru", serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color: #00A7E1;
+  background-color: #f5f5f5;
 }
 
-/* --- Navbar --- */
 .navbar {
   background-color: #202020;
   color: #3FBA9E;
-  padding: 0px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-/* Nav links left */
 .nav-links {
   list-style: none;
   display: flex;
@@ -37,33 +27,18 @@ body {
 }
 
 .nav-links li a {
-  color: #3FBA9E;
+  color: #F5F5F5;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
   font-size: 18px;
 }
 
-/* .regcour {
-  background-color: #096b68;
-  padding: 5px 10px 0 10px;
-  border-radius: 5px;
-  text-shadow: 0 0 8px #E95434;
-} */
-
 .nav-links li a:hover {
-  color: white;
+  color: #F9DA06;
 }
 
-/* Logo on right */
-.nav-brand {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-top: 8px;
-}
-
-.logo {
+.nav-brand .logo {
   height: 50px;
   border-radius: 10px;
   transition: 0.3s ease;
@@ -73,7 +48,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Hamburger hidden on desktop */
 #hamburger {
   display: none;
   font-size: 28px;
@@ -81,8 +55,6 @@ body {
   border: none;
   color: white;
   cursor: pointer;
-  outline: none; 
-  -webkit-tap-highlight-color: transparent; 
 }
 
 #hamburger.active {
@@ -90,21 +62,13 @@ body {
   border-radius: 5px;
 }
 
-#hamburger:focus {
-  outline: none;
-}
-
-/* --- Top Section --- */
 #top-section {
-  background-color: #3FBA9E;
+  background-color: #202020;
   color: #F9DA06;
   padding: 60px 20px 40px;
-  position: relative;
   text-align: center;
-  height: 500px;
-  border-radius: 0px 0px 20px 20px;
-  border: 1px solid #202020;
-  text-shadow: 0 0 6px #E95434;
+  border-radius: 0 0 20px 20px;
+  position: relative;
 }
 
 #top-section::before {
@@ -123,20 +87,41 @@ body {
 }
 
 .main-content h1 {
+  font-family: 'Noto Serif Dives Akuru', serif;
   font-size: 3rem;
-  margin: 80px 0 20px;
-  word-spacing: 25px;
   letter-spacing: 10px;
+  word-spacing: 20px;
+  margin-bottom: 10px;
+  /* color: white; */
 }
 
-.version {
-  color: #E95434;
+/* #prod{
+    text-shadow: 0 0 10px #E95434 ;
+}
+
+#matt{
+    text-shadow: 0 0 10px #00A7E1 ;
+}
+
+#vernum{
+    text-shadow: 0 0 10px #3FBA9E ;
+} */
+
+/* .highlight{
+    text-shadow: 0 0 4px #F5F5F5;
+} */
+
+#vernum{
+    text-shadow: 0 0 2px black,
+                 4px 0 8px #E95434,
+                 0 4px 8px #00A7E1,
+                 -4px 0 8px #3FBA9E;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  margin-top: 10px;
   color: white;
+  margin-top: 10px;
 }
 
 .course-description {
@@ -145,7 +130,44 @@ body {
   margin-top: 10px;
 }
 
-/* --- Bottom Section --- */
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #F9DA06;
+  color: #202020;
+}
+
+.btn-primary:hover {
+  background-color: #E95434;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #3FBA9E;
+  color: #202020;
+}
+
+.btn-secondary:hover {
+  background-color: #00A7E1;
+  color: white;
+}
+
 .bottom-section {
   padding: 50px 20px;
   text-align: center;
@@ -156,52 +178,50 @@ body {
   position: absolute;
   top: 15px;
   right: 20px;
-  color: #1e1e1e;
   font-size: 1rem;
+  color: #202020;
 }
 
 .live {
   color: red;
   font-weight: bold;
-  animation-name: liveBlink;
-  animation-duration: 1s;
-  animation-delay: 0;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(1, start);
+  animation: liveBlink 1s infinite steps(1, start);
 }
-
-/* .bottom-section h2 {
-  font-size: 2.5rem;
-  letter-spacing: 15px;
-  color: #096b68;
-} */
 
 .updates-box {
   position: relative;
-  width: 100%; /* Adjust width as needed */
+  width: 100%;
   height: 60px;
   margin: 20px auto 0;
   border: 2px solid black;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f5f5f5;
+  background-color: white;
   color: #202020;
 }
 
-/* Bouncing Text */
 .updates-text {
   position: absolute;
   white-space: nowrap;
   font-size: 16px;
   padding-left: 10px;
   padding-top: 17px;
-  animation: bounceText 5s linear infinite alternate;
+  animation: scrollText 7s ease-in-out infinite alternate;
 }
 
-/* --- Collapsibles --- */
+@keyframes liveBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes scrollText {
+  0% { left: 0; }
+  100% { left: calc(100% - 320px); }
+}
+
 .collapsible {
   background-color: #F9DA06;
-  color: #E95434;
+  color: #202020;
   cursor: pointer;
   padding: 14px;
   width: 100%;
@@ -218,9 +238,23 @@ body {
 }
 
 .collapsible:hover {
+  
   background-color: #E95434;
-  color: #F9DA06;
+  color: #F5F5F5;
   text-shadow: 0 0 4px #043735;
+}
+
+#week2,
+#week4,
+#lsess{
+    
+    background-color: #3FBA9E;
+}
+
+#week2:hover,
+#week4:hover,
+#lsess:hover{
+    background-color: #00A7E1;
 }
 
 .arrow {
@@ -313,19 +347,17 @@ body {
   margin-top: 10px;
 }
 
-/* --- Footer --- */
 .footer {
   background-color: #202020;
   color: #3FBA9E;
   padding: 40px 20px;
   text-align: center;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
 }
 
 .footer h3 {
   margin-bottom: 15px;
   font-size: 1.4rem;
-  /* color: white; */
 }
 
 .contact-icons {
@@ -342,42 +374,25 @@ body {
   transition: transform 0.3s ease;
 }
 
+.contact-icons a:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
 #mail_img_invert {
   filter: invert(1);
 }
 
-.contact-icons a:hover img {
-  transform: scale(1.2);
-  filter: invert(1);
-}
 
-#mail_img_invert:hover {
-  filter: invert(0);
-}
-
-/* --- Responsive Styles --- */
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  #hamburger {
-    display: block;
-    align-self: flex-start;
-    margin-bottom: 10px;
-  }
-
   .nav-links {
     flex-direction: column;
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    background-color: #0e2148;
+    background-color: #202020;
     margin-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 0 0;
+    padding: 0;
     opacity: 0;
     transition: max-height 0.8s ease-in, padding 0.8s ease-in, opacity 0.8s ease-in;
     border-radius: 10px;
@@ -389,72 +404,17 @@ body {
     opacity: 1;
   }
 
+  .nav-brand{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
   .nav-links li {
     padding: 8px 20px;
   }
 
-  .nav-brand {
-    /* align-self: flex-end; */
-    margin-top: 5px;
-    position: absolute;
-    right: 10px;
-    top: 1px;
-  }
-
-  .main-content h1 {
-    font-size: 2.2rem;
-    word-spacing: 6px;
-  }
-
-  .subtitle,
-  .course-description {
-    font-size: 1rem;
-  }
-
-  .bottom-section h2 {
-    font-size: 2rem;
-    letter-spacing: 10px;
-  }
-
-  .live-status {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .main-content h1 {
-    font-size: 1.7rem;
-    word-spacing: 4px;
-  }
-
-  .bottom-section h2 {
-    font-size: 1.5rem;
-    letter-spacing: 6px;
-  }
-
-  .course-label,
-  .live-status {
-    font-size: 0.8rem;
-  }
-}
-
-@keyframes liveBlink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes bounceText {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: calc(100% - 330px);
+  #hamburger {
+    display: block;
   }
 }
