@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: "Noto Serif Dives Akuru", serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   background-color: #f5f5f5;
 }
@@ -113,12 +113,12 @@ body {
     text-shadow: 0 0 4px #F5F5F5;
 } */
 
-#vernum{
+/* #vernum{
     text-shadow: 0 0 2px black,
                  4px 0 8px #E95434,
                  0 4px 8px #00A7E1,
                  -4px 0 8px #3FBA9E;
-}
+} */
 
 .subtitle {
   font-size: 1.2rem;
@@ -150,6 +150,7 @@ body {
   text-decoration: none;
   transition: 0.3s ease-in-out;
   font-size: 1rem;
+  
 }
 
 .btn-primary {
@@ -171,6 +172,31 @@ body {
   background-color: #00A7E1;
   color: white;
 }
+
+.btn-slack{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 8px;
+    background-color: #50144c;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.btn-slack:hover{
+  color: #50144c;
+  background-color: white;
+}
+
+.btn-slack img{
+    width: 15px;
+    position: relative;
+
+}
+
+
 
 .bottom-section {
   padding: 50px 20px;
@@ -210,7 +236,7 @@ body {
   font-size: 16px;
   padding-left: 10px;
   padding-top: 17px;
-  animation: scrollText 7s ease-in-out infinite alternate;
+  animation: scrollText 7s linear infinite alternate;
 }
 
 @keyframes liveBlink {
@@ -224,8 +250,7 @@ body {
 }
 
 .collapsible {
-  background-color: #F9DA06;
-  color: #202020;
+  color: #F5F5F5;
   cursor: pointer;
   padding: 14px;
   width: 100%;
@@ -237,29 +262,36 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  border: 2px solid #202020;
+  text-shadow: 0 0 2px black;
+  /* border: 2px solid #202020; */
   transition: background 0.3s;
-}
-
-.collapsible:hover {
   
-  background-color: #E95434;
-  color: #F5F5F5;
-  text-shadow: 0 0 4px #043735;
 }
 
-#week2,
-#week4,
-#lsess{
-    
-    background-color: #3FBA9E;
+.collapsible.odd{
+    background: linear-gradient(to right, #00A7E1, #0072ff);
+    transition: 0.3s ease-in;
+    box-shadow: 0 2px 2px #00a9e18a;
 }
 
-#week2:hover,
-#week4:hover,
-#lsess:hover{
-    background-color: #00A7E1;
+.collapsible.even{
+    background: linear-gradient(to right, #3FBA9E, #10a579);
+    transition: 0.3s ease-in;
+    box-shadow: 0 2px 2px #3fba9d65;
 }
+
+/* .collapsible:hover {
+    background: linear-gradient(to right, #E95434, #C0392B);
+    color: #F9DA06;
+} */
+
+.collapsible:hover{
+    background: linear-gradient(90deg, #F9DA06, #E6B800);
+    color: #202020;
+    text-shadow: none;
+    box-shadow: 0 2px 1px #E95434;
+}
+
 
 .arrow {
   display: inline-block;
