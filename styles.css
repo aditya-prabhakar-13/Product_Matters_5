@@ -190,12 +190,11 @@ body {
   background-color: white;
 }
 
-.btn-slack img{
+.slack-img{
     width: 15px;
     position: relative;
 
 }
-
 
 
 .bottom-section {
@@ -247,6 +246,13 @@ body {
 @keyframes scrollText {
   0% { left: 0; }
   100% { left: calc(100% - 320px); }
+}
+
+.course-section{
+  padding: 0 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .collapsible {
