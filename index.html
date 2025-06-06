@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Product Matters 5.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Matters 5.0</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <button id="hamburger">&#9776;</button>
-
-        <ul id="nav-links" class="nav-links">
-            <li><a href="#top-section">Home</a></li>
-            <li><a href="#" class="regcour">Register</a></li>
-            <li><a href="#course" class="regcour">Course</a></li>
-            <li><a href="#course">Leaderboard</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-
-        <div class="nav-brand">
-            <a href="https://www.ecelliitg.in/">
-                <img src="images/ecell.png" alt="E-Cell Logo" class="logo">
-            </a>
-            
-        </div>
-    </nav>
-
-    <div id="top-section">
-        <div class="main-content">
-            <h1><span class="highlight">PRODUCT</span> <span class="highlight">MATTERS</span> <span class="version">5.0</span></h1>
-            <p class="subtitle">Welcome to the world of Product Management</p>
-            <p class="course-description">&lt;Course Description&gt;</p>
-        </div>
+  <nav class="navbar">
+    <button id="hamburger">&#9776;</button>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#top-section">Home</a></li>
+      <li><a href="#course">Leaderboard</a></li>
+      <li><a href="#">Schedule</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-brand">
+      <a href="https://www.ecelliitg.in/" target="_blank">
+        <img src="images/ecell.png" alt="E-Cell Logo" class="logo">
+      </a>
     </div>
+  </nav>
 
-    <div class="bottom-section">
-        <p class="live-status">Course is <span class="live">LIVE!</span></p>
-        <div class="updates-box">
-            <div class="updates-text"> New modules coming soon! Stay tuned!  </div>
-        </div>
+  <div id="top-section">
+    <div class="main-content">
+      <h1><span class="highlight" id="prod">PRODUCT</span> <span class="highlight" id="matt">MATTERS</span> <span class="version" id="vernum">5.0</span></h1>
+      <p class="subtitle">Welcome to the world of Product Management</p>
+      <p class="course-description">Course Description</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Register Now</a>
+        <a href="#course" class="btn btn-secondary">View Course</a>
+      </div>
     </div>
+  </div>
 
-    <div class="course-section" id="course">
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span> Week 1</button>
+  <div class="bottom-section">
+    <p class="live-status">Course is <span class="live">LIVE!</span></p>
+    <div class="updates-box">
+      <div class="updates-text"> New modules coming soon! Stay tuned! </div>
+    </div>
+  </div>
+
+  <div class="course-section" id="course">
+        <button class="collapsible" id="week1"><span class="arrow">&#x2BC8;</span> Week 1</button>
         <div class="content">
             <div class="course-table">
                 <div class="table-header-week">Week 1</div>
@@ -82,7 +80,7 @@
                 <div class="table-rows-task3"></div>
             </div>
         </div>
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span> Week 2</button>
+        <button class="collapsible" id="week2"><span class="arrow">&#x2BC8;</span> Week 2</button>
         <div class="content">
             <div class="course-table">
                 <div class="table-header-week">Week 2</div>
@@ -117,7 +115,7 @@
                 <div class="table-rows-task3"></div>
             </div>
         </div>
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span> Week 3</button>
+        <button class="collapsible" id="week3"><span class="arrow">&#x2BC8;</span> Week 3</button>
         <div class="content">
             <div class="course-table">
                 <div class="table-header-week">Week 3</div>
@@ -152,7 +150,7 @@
                 <div class="table-rows-task3"></div>
             </div>
         </div>
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span> Week 4</button>
+        <button class="collapsible" id="week4"><span class="arrow">&#x2BC8;</span> Week 4</button>
         <div class="content">
             <div class="course-table">
                 <div class="table-header-week">Week 4</div>
@@ -187,7 +185,7 @@
                 <div class="table-rows-task3"></div>
             </div>
         </div>
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span>Assessment</button>
+        <button class="collapsible" id="assess"><span class="arrow">&#x2BC8;</span>Assessment</button>
         <div class="content">
             <div class="ass-table">
                 <div class="link-header">Link</div>
@@ -195,7 +193,7 @@
                 <div class="link-header">Instructions</div>
             </div>
         </div>
-        <button class="collapsible"><span class="arrow">&#x2BC8;</span>Live Sessions</button>
+        <button class="collapsible" id="lsess"><span class="arrow">&#x2BC8;</span>Live Sessions</button>
         <div class="content">
             <div class="link-table">
                 <div class="ass-header">Link</div>
@@ -205,25 +203,27 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-content" id="contact">
-            <h3>Connect With Us!</h3>
-            <div class="contact-icons">
-                <a href="mailto:edc@iitg.ac.in" title="Email" id="mail_img_invert">
-                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
-                </a>
-                <a href="https://wa.me/message/U5KGWMLYDUGOE1" target="_blank" title="WhatsApp">
-                    <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
-                </a>
-                <a href="https://www.instagram.com/ecell_iitg" target="_blank" title="Instagram">
-                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-                </a>
-                <a href="https://in.linkedin.com/company/ecell-iitg" target="_blank" title="LinkedIn">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
-                </a>
-            </div>
-        </div>
-    </footer>
-    <script src="app.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content" id="contact">
+      <h3>Connect With Us!</h3>
+      <div class="contact-icons">
+        <a href="mailto:edc@iitg.ac.in" title="Email" id="mail_img_invert">
+          <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        </a>
+        <a href="https://wa.me/message/U5KGWMLYDUGOE1" target="_blank" title="WhatsApp">
+          <img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp">
+        </a>
+        <a href="https://www.instagram.com/ecell_iitg" target="_blank" title="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+        </a>
+        <a href="https://in.linkedin.com/company/ecell-iitg" target="_blank" title="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
