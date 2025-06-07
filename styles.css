@@ -459,4 +459,22 @@ body {
   #hamburger {
     display: block;
   }
+
+  .content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
+  .course-table, 
+  .ass-table, 
+  .link-table {
+    min-width: 1000px; 
+    width: 100%; 
+    display: grid;
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-columns: 2fr 3fr 3fr 3fr 3fr; 
+    text-align: center;
+    margin-top: 10px;
+  }
 }
