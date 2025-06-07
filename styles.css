@@ -23,8 +23,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-  
-
 
 .nav-links {
   list-style: none;
@@ -84,8 +82,8 @@ body {
 
 #top-section::before {
   content: "";
-  background: linear-gradient(to bottom, rgba(80, 20, 76, 0.95), rgba(32, 32, 32, 1)), 
-              url('images/top-section-bg.png');
+  background: linear-gradient(to bottom, rgba(80, 20, 76, 0.95), rgba(32, 32, 32, 1)),
+    url('images/top-section-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -98,7 +96,7 @@ body {
   z-index: 0;
 }
 
-.main-content{
+.main-content {
   position: relative;
 }
 
@@ -108,31 +106,7 @@ body {
   letter-spacing: 10px;
   word-spacing: 20px;
   margin-bottom: 10px;
-  /* color: white; */
 }
-
-/* #prod{
-    text-shadow: 0 0 10px #E95434 ;
-}
-
-#matt{
-    text-shadow: 0 0 10px #00A7E1 ;
-} */
-
-/* #vernum{
-    color: white;
-} */
-
-/* .highlight{
-    text-shadow: 0 0 4px #F5F5F5;
-} */
-
-/* #vernum{
-    text-shadow: 0 0 2px black,
-                 4px 0 8px #E95434,
-                 0 4px 8px #00A7E1,
-                 -4px 0 8px #3FBA9E;
-} */
 
 .subtitle {
   font-size: 1.2rem;
@@ -157,19 +131,26 @@ body {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 10px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   font-size: 1rem;
-  
+  width: 200px;
 }
 
 .btn-primary {
   background-color: #F9DA06;
   color: #202020;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 8px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
 }
 
 .btn-primary:hover {
@@ -187,7 +168,7 @@ body {
   color: white;
 }
 
-.btn-slack{
+.btn-slack {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
@@ -195,21 +176,26 @@ body {
   color: #50144c;
   background-color: white;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
   align-items: center;
 }
 
-.btn-slack:hover{
+.btn-slack:hover {
   background-color: #50144c;
   color: white;
 }
 
-.slack-img{
+.slack-img {
   width: 15px;
   position: relative;
-
 }
 
+.luma-img {
+  width: 25px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 50%;
+}
 
 .bottom-section {
   padding: 50px 20px;
@@ -227,12 +213,11 @@ body {
   gap: 8px;
 }
 
-
 .live {
   color: red;
   font-weight: bold;
   padding: 0 5px 0 0;
-  width: 120px;
+  width: 150px;
   text-align: left;
 }
 
@@ -267,7 +252,7 @@ body {
   100% { left: calc(100% - 320px); }
 }
 
-.course-section{
+.course-section {
   padding: 0 10px 0 10px;
   display: flex;
   flex-direction: column;
@@ -275,7 +260,6 @@ body {
 }
 
 .collapsible {
-  /* background: linear-gradient(to right, #00A7E1, #0072ff); */
   background-color: #202020;
   color: #00A7E1;
   cursor: pointer;
@@ -289,38 +273,15 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  /* text-shadow: 0 0 2px black; */
-  /* border: 2px solid #202020; */
   transition: background 0.5s ease;
   box-shadow: 0 2px 2px #00a9e18a;
-  
 }
 
-/* .collapsible.odd{
-    background: linear-gradient(to right, #00A7E1, #0072ff);
-    transition: 0.3s ease-in;
-    box-shadow: 0 2px 2px #00a9e18a;
+.collapsible:hover {
+  background-color: #f5f5f5;
+  color: #3FBA9E;
+  box-shadow: 0 2px 2px #3fba9d65;
 }
-
-.collapsible.even{
-    background: linear-gradient(to right, #3FBA9E, #10a579);
-    transition: 0.3s ease-in;
-    box-shadow: 0 2px 2px #3fba9d65;
-} */
-
-/* .collapsible:hover {
-    background: linear-gradient(to right, #E95434, #C0392B);
-    color: #F9DA06;
-} */
-
-.collapsible:hover{
-    /* background: linear-gradient(to right, #3FBA9E, #10a579); */
-    background-color: #f5f5f5;
-    color: #3FBA9E;
-    /* text-shadow: 0 0 1px black; */
-    box-shadow: 0 2px 2px #3fba9d65;
-}
-
 
 .arrow {
   display: inline-block;
@@ -335,7 +296,6 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  /* background-color: #f1f1f1; */
   border-radius: 0 0 5px 5px;
   margin-bottom: 10px;
   padding: 0 18px;
@@ -348,7 +308,7 @@ body {
   text-align: center;
   margin-top: 10px;
   box-shadow: 0 0 10px #F9DA06;
-  border: 1px solid rgb(207, 207, 207);;
+  border: 1px solid rgb(207, 207, 207);
 }
 
 .table-header,
@@ -363,13 +323,13 @@ body {
   border-bottom: 1px solid rgb(207, 207, 207);
 }
 
-.table-header-week{
+.table-header-week {
   border-right: 1px solid rgb(207, 207, 207);
 }
 
 .table-rows-days {
   background-color: #202020;
-  border-bottom: 1px ;
+  border-bottom: 1px;
   border-bottom-color: rgb(207, 207, 207);
   border-top: 0;
   border-left: 1px;
@@ -423,7 +383,6 @@ body {
 
 .footer {
   background: linear-gradient(to top, rgba(80, 20, 76, 0.95), rgba(32, 32, 32, 1));
-  /* background-color: #50144c; */
   color: #F9DA06;
   padding: 40px 20px;
   text-align: center;
@@ -459,12 +418,16 @@ body {
   filter: invert(1);
 }
 
-
+/* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
 
-
-  .navbar{
-    padding-top: 8px;
+  .navbar {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #50144c;
+    padding: 8px 20px 10px 30px;
+    z-index: 10;
   }
 
   .nav-links {
@@ -472,13 +435,14 @@ body {
     width: 100%;
     max-height: 0;
     overflow: hidden;
-    background-color: #202020;
+    background-color: transparent;
     margin-top: 10px;
     padding: 0;
     opacity: 0;
     transition: max-height 0.8s ease-in, padding 0.8s ease-in, opacity 0.8s ease-in;
     border-radius: 10px;
     gap: 10px;
+    order: 2;
   }
 
   .nav-links.show {
@@ -487,9 +451,10 @@ body {
     opacity: 1;
   }
 
-  .nav-brand{
+  .nav-brand {
     position: absolute;
-    top: 4px;
+    order: 1;
+    top: 10px;
     right: 10px;
   }
 
@@ -499,6 +464,8 @@ body {
 
   #hamburger {
     display: block;
+    order: 0;
+    margin-bottom: 10px;
   }
 
   .content {
@@ -507,14 +474,14 @@ body {
     width: 100%;
   }
 
-  .course-table, 
-  .ass-table, 
+  .course-table,
+  .ass-table,
   .link-table {
-    min-width: 1000px; 
-    width: 100%; 
+    min-width: 1000px;
+    width: 100%;
     display: grid;
-    grid-template-rows: repeat(6, 1fr); 
-    grid-template-columns: 2fr 3fr 3fr 3fr 3fr; 
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 2fr 3fr 3fr 3fr 3fr;
     text-align: center;
     margin-top: 10px;
   }
