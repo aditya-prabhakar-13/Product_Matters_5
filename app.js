@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //   slack_img.style.backgroundColor = '';
   // });
 
-  
+  // Smooth scroll function with easing
   function smoothScrollToTarget(targetSelector, duration = 1000) {
     const target = document.querySelector(targetSelector);
     if (!target) return;
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(step);
   }
 
-  
+  // View Course button
   const viewCourseBtn = document.querySelector('.btn.btn-secondary');
   if (viewCourseBtn) {
     viewCourseBtn.addEventListener('click', function (e) {
@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  // Contact link in navbar
   const contactLink = document.querySelector('a[href="#contact"]');
   if (contactLink) {
     contactLink.addEventListener('click', function (e) {
@@ -71,5 +72,30 @@ document.addEventListener("DOMContentLoaded", function () {
       smoothScrollToTarget('#contact');
     });
   }
+
+
+  const countdownElement = document.getElementById("countdown");
+  const courseStartTime = new Date("2025-06-15T10:00:00+05:30");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = courseStartTime - now;
+
+    if (diff <= 0) {
+      countdownElement.textContent = "LIVE!";
+      countdownElement.style.color = "red";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown();
 });
 
