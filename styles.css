@@ -256,6 +256,7 @@ body {
 }
 
 .collapsible {
+  background: linear-gradient(to right, #00A7E1, #0072ff);
   color: #F5F5F5;
   cursor: pointer;
   padding: 14px;
@@ -270,11 +271,12 @@ body {
   gap: 10px;
   text-shadow: 0 0 2px black;
   /* border: 2px solid #202020; */
-  transition: background 0.3s;
+  transition: background 0.5s ease;
+  box-shadow: 0 2px 2px #00a9e18a;
   
 }
 
-.collapsible.odd{
+/* .collapsible.odd{
     background: linear-gradient(to right, #00A7E1, #0072ff);
     transition: 0.3s ease-in;
     box-shadow: 0 2px 2px #00a9e18a;
@@ -284,7 +286,7 @@ body {
     background: linear-gradient(to right, #3FBA9E, #10a579);
     transition: 0.3s ease-in;
     box-shadow: 0 2px 2px #3fba9d65;
-}
+} */
 
 /* .collapsible:hover {
     background: linear-gradient(to right, #E95434, #C0392B);
@@ -292,16 +294,16 @@ body {
 } */
 
 .collapsible:hover{
-    background: linear-gradient(90deg, #F9DA06, #E6B800);
+    background: linear-gradient(to right, #3FBA9E, #10a579);
     color: #202020;
-    text-shadow: none;
-    box-shadow: 0 2px 1px #E95434;
+    text-shadow: 0 0 1px black;
+    box-shadow: 0 2px 2px #3fba9d65;
 }
 
 
 .arrow {
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .collapsible.active .arrow {
@@ -311,7 +313,7 @@ body {
 .content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: max-height 0.5s ease-out;
   /* background-color: #f1f1f1; */
   border-radius: 0 0 5px 5px;
   margin-bottom: 10px;
