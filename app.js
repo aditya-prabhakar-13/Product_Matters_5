@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   const countdownElement = document.getElementById("countdown");
-  const courseStartTime = new Date("2025-06-15T10:00:00+05:30");
+  const courseStartTime = new Date("2025-06-16T00:00:00+05:30");
 
   function updateCountdown() {
     const now = new Date();
