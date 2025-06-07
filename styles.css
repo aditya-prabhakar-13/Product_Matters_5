@@ -179,25 +179,25 @@ body {
 }
 
 .btn-slack{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 8px;
-    background-color: #50144c;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 8px;
+  color: #50144c;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
 }
 
 .btn-slack:hover{
-  color: #50144c;
-  background-color: white;
+  background-color: #50144c;
+  color: white;
 }
 
 .slack-img{
-    width: 15px;
-    position: relative;
+  width: 15px;
+  position: relative;
 
 }
 
