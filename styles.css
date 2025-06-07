@@ -17,7 +17,7 @@ body {
   left: 0;
   z-index: 10;
   color: #F5F5F5;
-  padding: 5px 20px 0 50px;
+  padding: 5px 20px 0 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 80px;
+  gap: 50px;
   margin: 0;
   padding: 0;
   flex-grow: 1;
@@ -218,17 +218,22 @@ body {
 }
 
 .live-status {
-  position: absolute;
-  top: 15px;
-  right: 20px;
+  position: relative;
   font-size: 1rem;
   color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 8px;
 }
+
 
 .live {
   color: red;
   font-weight: bold;
-  animation: liveBlink 1s infinite steps(1, start);
+  padding: 0 5px 0 0;
+  width: 120px;
+  text-align: left;
 }
 
 .updates-box {
