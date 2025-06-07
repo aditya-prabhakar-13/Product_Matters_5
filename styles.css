@@ -6,11 +6,11 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  background-color: #202020;
 }
 
 .navbar {
-  background-color: #202020;
+  background-color: #50144cdb;
   color: #3FBA9E;
   padding: 10px 20px;
   display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 #top-section {
-  background-color: #202020;
+  background: linear-gradient(to bottom, #50144c, #202020);
   color: #F9DA06;
   padding: 60px 20px 40px;
   text-align: center;
@@ -75,7 +75,8 @@ body {
 
 #top-section::before {
   content: "";
-  background-image: url('images/top-section-bg.png');
+  background: linear-gradient(to bottom, rgba(80, 20, 76, 0.95), rgba(32, 32, 32, 1)), 
+              url('images/top-section-bg.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,8 +85,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.09;
+  opacity: 1;
   z-index: 0;
+}
+
+.main-content{
+  position: relative;
 }
 
 .main-content h1 {
@@ -103,10 +108,10 @@ body {
 
 #matt{
     text-shadow: 0 0 10px #00A7E1 ;
-}
+} */
 
-#vernum{
-    text-shadow: 0 0 10px #3FBA9E ;
+/* #vernum{
+    color: white;
 } */
 
 /* .highlight{
@@ -208,7 +213,7 @@ body {
   top: 15px;
   right: 20px;
   font-size: 1rem;
-  color: #202020;
+  color: #f5f5f5;
 }
 
 .live {
@@ -222,11 +227,11 @@ body {
   width: 100%;
   height: 60px;
   margin: 20px auto 0;
-  border: 2px solid black;
+  border: 2px solid #3FBA9E;
   border-radius: 8px;
   overflow: hidden;
-  background-color: white;
-  color: #202020;
+  background-color: #202020;
+  color: #f5f5f5;
 }
 
 .updates-text {
@@ -256,12 +261,13 @@ body {
 }
 
 .collapsible {
-  background: linear-gradient(to right, #00A7E1, #0072ff);
-  color: #F5F5F5;
+  /* background: linear-gradient(to right, #00A7E1, #0072ff); */
+  background-color: #202020;
+  color: #00A7E1;
   cursor: pointer;
   padding: 14px;
   width: 100%;
-  border: none;
+  border: 1px solid #00A7E1;
   text-align: left;
   font-size: 24px;
   border-radius: 5px;
@@ -269,7 +275,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-shadow: 0 0 2px black;
+  /* text-shadow: 0 0 2px black; */
   /* border: 2px solid #202020; */
   transition: background 0.5s ease;
   box-shadow: 0 2px 2px #00a9e18a;
@@ -294,9 +300,10 @@ body {
 } */
 
 .collapsible:hover{
-    background: linear-gradient(to right, #3FBA9E, #10a579);
-    color: #202020;
-    text-shadow: 0 0 1px black;
+    /* background: linear-gradient(to right, #3FBA9E, #10a579); */
+    background-color: #f5f5f5;
+    color: #3FBA9E;
+    /* text-shadow: 0 0 1px black; */
     box-shadow: 0 2px 2px #3fba9d65;
 }
 
@@ -392,7 +399,7 @@ body {
 }
 
 .footer {
-  background-color: #202020;
+  background-color: #50144c;
   color: #3FBA9E;
   padding: 40px 20px;
   text-align: center;
