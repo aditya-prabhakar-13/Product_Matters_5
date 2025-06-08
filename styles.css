@@ -306,6 +306,7 @@ body {
 .week-logo-container{
   display: flex;
   align-content: center;
+  width: 32px;
 }
 
 .week-logo{
@@ -314,6 +315,10 @@ body {
 
 .week-logo-grn{
   width: 30px;
+}
+
+.week-num{
+  padding-left: 10px;
 }
 
 .collapsible:hover {
