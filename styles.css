@@ -468,6 +468,7 @@ body {
   gap: 50px;
   margin-top: 20px;
   margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 
@@ -689,6 +690,7 @@ body {
     position: relative;
     z-index: 1;
   }
+  
   .footer-contact{
       display: flex;
       flex-direction: column;
