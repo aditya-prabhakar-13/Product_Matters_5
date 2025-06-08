@@ -493,6 +493,8 @@ body {
 .connect-ppl{
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 1;
 }
 
 .ppl{
@@ -549,6 +551,8 @@ body {
   justify-items: center;
   align-content: center;
   margin-top: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -628,6 +632,10 @@ body {
     display: block;
     order: 0;
     margin-bottom: 10px;
+  }
+
+  #top-section{
+    padding-top: 20px;
   }
 
   .content {
