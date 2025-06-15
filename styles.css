@@ -585,6 +585,26 @@ body {
     color: #009879;
 }
 
+/* td.brief-txt{
+  text-align: left;
+} */
+
+.styled-table td a{
+  text-decoration: none;
+}
+
+.styled-table td a::after {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background-image: url('images/external-link.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
 .session-links{
   text-decoration: none;
 }
