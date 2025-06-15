@@ -63,6 +63,8 @@ document.addEventListener("DOMContentLoaded", function () {
       smoothScrollToTarget('#course');
     });
   }
+  
+
 
   // Contact link in navbar
   const contactLink = document.querySelector('a[href="#contact"]');
@@ -72,7 +74,55 @@ document.addEventListener("DOMContentLoaded", function () {
       smoothScrollToTarget('#contact');
     });
   }
+  const courseLink = document.querySelector('a[href="#course"]');
+  if (courseLink) {
+    courseLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScrollToTarget('#course');
+    });
+  }
+  // ...existing code...
 
+// Stylish Countdown for Registration Close
+(function() {
+  // Set your registration close date/time here:
+  const regClose = new Date("2025-06-15T23:59:59+05:30");
+  const daysEl = document.getElementById('cd-days');
+  const hoursEl = document.getElementById('cd-hours');
+  const minsEl = document.getElementById('cd-minutes');
+  const secsEl = document.getElementById('cd-seconds');
+
+  function pad(n) { return n < 10 ? '0' + n : n; }
+
+  function updateRegCountdown() {
+    if (!daysEl) return;
+    const now = new Date();
+    const diff = regClose - now;
+    if (diff <= 0) {
+      daysEl.textContent = hoursEl.textContent = minsEl.textContent = secsEl.textContent = "00";
+      secsEl.classList.remove('beat');
+      document.querySelector('.countdown-headline').textContent = "Registration Closed!";
+      return;
+    }
+    const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const m = Math.floor((diff / (1000 * 60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    daysEl.textContent = pad(d);
+    hoursEl.textContent = pad(h);
+    minsEl.textContent = pad(m);
+
+    // Beat animation on seconds
+    secsEl.textContent = pad(s);
+    secsEl.classList.remove('beat');
+    void secsEl.offsetWidth; // trigger reflow
+    secsEl.classList.add('beat');
+  }
+
+  setInterval(updateRegCountdown, 1000);
+  updateRegCountdown();
+})();
 
   const countdownElement = document.getElementById("countdown");
   const courseStartTime = new Date("2025-06-16T00:00:00+05:30");
@@ -98,4 +148,3 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateCountdown, 1000);
   updateCountdown();
 });
-
