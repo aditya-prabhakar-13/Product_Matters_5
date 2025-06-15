@@ -585,6 +585,13 @@ body {
     color: #009879;
 }
 
+.session-links{
+  text-decoration: none;
+}
+
+.session-links:hover{
+  font-weight: bold;
+}
 
 .footer {
   background-color: #202020;
