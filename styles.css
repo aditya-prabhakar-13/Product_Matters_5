@@ -567,12 +567,11 @@ body {
     color: #ffffff;
     text-align: left;
 }
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.styled-table th {
+  padding: 12px 15px;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .styled-table tbody tr {
     border-bottom: 1px solid #dddddd;
@@ -585,9 +584,17 @@ body {
     color: #009879;
 }
 
-/* td.brief-txt{
+.styled-table td{
+  padding: 12px 15px;
   text-align: left;
-} */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+td.day-txt{
+  text-align: center;
+}
+
 
 .styled-table td a{
   text-decoration: none;
