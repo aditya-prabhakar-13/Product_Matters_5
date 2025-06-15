@@ -81,7 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
       smoothScrollToTarget('#course');
     });
   }
-  // ...existing code...
+  const scheduleLink = document.querySelector('a[href="#schedule"]');
+  if (scheduleLink) {
+    scheduleLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      smoothScrollToTarget('#schedule');
+    });
+  }
 
 // Stylish Countdown for Registration Close
 (function() {
