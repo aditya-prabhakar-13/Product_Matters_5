@@ -598,6 +598,7 @@ td.day-txt{
 
 .styled-table td a{
   text-decoration: none;
+  color: #009879;
 }
 
 .styled-table td a::after {
