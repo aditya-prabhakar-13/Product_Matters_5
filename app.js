@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // Stylish Countdown for Registration Close
 (function() {
   // Set your registration close date/time here:
-  const regClose = new Date("2025-06-22T23:59:59+05:30");
+  const regClose = new Date("2025-06-23T23:59:59+05:30");
   const daysEl = document.getElementById('cd-days');
   const hoursEl = document.getElementById('cd-hours');
   const minsEl = document.getElementById('cd-minutes');
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
   const countdownElement = document.getElementById("countdown");
-  const courseStartTime = new Date("2025-06-23T00:00:00+05:30");
+  const courseStartTime = new Date("2025-06-16T00:00:00+05:30");
 
   function updateCountdown() {
     const now = new Date();
