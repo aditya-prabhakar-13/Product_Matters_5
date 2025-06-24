@@ -104,6 +104,12 @@ body {
   font-family: Helvetica;
 }
 
+#Unstop{
+
+  text-shadow: 0 0 1px black;
+  
+}
+
 .luma-ticker {
   width: auto;
   overflow: hidden;
